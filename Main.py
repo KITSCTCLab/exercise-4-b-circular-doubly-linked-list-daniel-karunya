@@ -7,7 +7,7 @@ final_list = [circular_linked_list[0],circular_linked_list[1],circular_linked_li
 for i in range (2,length_of_circular_linked_list):
   if circular_linked_list[i] not in final_list:
     final_list.append(circular_linked_list[i])
-print(len(final_list)
+print(len(final_list))
 print(circular_linked_list[0],circular_linked_list[1],circular_linked_list[2],end=" ")
 for i in range(0,len(final_list)):
       print(circular_linked_list[i],end = " ")      
