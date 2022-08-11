@@ -3,11 +3,12 @@ length_of_circular_linked_list = int(input())
 # Read space-separated integers that denote the elements of the list which is returned as the output of the algorithm
 circular_linked_list = list(map(int,input().strip().split(" ")))
 # Write your code here
-final_list = [circular_linked_list[0],circular_linked_list[1],circular_linked_list[2]]
-for i in range (2,length_of_circular_linked_list):
-  if circular_linked_list[i] not in final_list:
-    final_list.append(circular_linked_list[i])
-print(len(final_list))
-print(circular_linked_list[0],circular_linked_list[1],circular_linked_list[2],end=" ")
-for i in range(3,len(final_list)):
-      print(circular_linked_list[i],end = " ")      
+
+flist = [circular_linked_list[i] for i in range(3)]
+for i in circular_linked_list:
+    if i not in flist:
+        flist.append(i)
+
+print(len(flist))
+for i in flist:
+    print(i,end=" ")
