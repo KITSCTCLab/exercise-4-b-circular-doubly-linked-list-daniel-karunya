@@ -9,5 +9,5 @@ for i in range (2,length_of_circular_linked_list):
     final_list.append(circular_linked_list[i])
 print(len(final_list))
 print(circular_linked_list[0],circular_linked_list[1],circular_linked_list[2],end=" ")
-for i in range(0,len(final_list)):
+for i in range(3,len(final_list)):
       print(circular_linked_list[i],end = " ")      
