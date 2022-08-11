@@ -6,6 +6,6 @@ circular_linked_list = list(map(int,input().strip().split(" ")))
 print(circular_linked_list[0]," ",circular_linked_list[1]," ",circular_linked_list[2],end="")
 final_list = [circular_linked_list[0],circular_linked_list[1],circular_linked_list[2]]
 for i in range (2,length_of_circular_linked_length):
-  if circular_linked_linked[i] not in final_list:
+  if circular_linked_list[i] not in final_list:
     print(circular_linked_list[i],end = " ")
     final_list.append(circular_linked_list[i])
